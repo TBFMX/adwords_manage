@@ -4,7 +4,9 @@ gem 'rails', '3.2.15'
 gem 'jquery-rails'
 
 # Using sqlite by default.
-gem 'sqlite3'
+group :development do
+	gem 'sqlite3'
+end
 
 # AdWords API gem.
 gem 'google-adwords-api', '~> 0.11.1'
@@ -12,4 +14,6 @@ gem 'google-adwords-api', '~> 0.11.1'
 # Gem for OAuth authorization.
 gem 'oauth2'
 
-gem 'mysql2'
+group :production do
+	gem 'mysql2'
+end
