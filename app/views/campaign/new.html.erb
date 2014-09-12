@@ -1,1 +1,7 @@
 <%= @aux_camp_view %>
+
+<%= form_for :info  do |f| %>
+  Campaign name: <%= f.text_field :campaign_name %><br />
+  Budget name : <%= f.text_field :budget_name %><br />
+  <%= f.submit %>
+<% end %>
